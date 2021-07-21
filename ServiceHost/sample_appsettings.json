@@ -1,0 +1,25 @@
+{
+  "Kestrel": {
+    "Endpoints": {
+      "Http": {
+        "Url": "http://*:9010"
+      }
+    }
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  },
+  "Jwt": {
+    "Audience": "all",
+    "Issuer": "ascentis",
+    "Key": "java_web_token_secret",
+    "SecondsToExpire": 600,
+    "CacheSecondsToExpire": 600
+  },
+  "FeedDBConnectionString": "data source=rw2dev-sql.ascentis-cloud.com,1433;initial catalog=Feed;user id=sa;password=Rabbit99;multipleactiveresultsets=True;",
+  "CorsOrigins": [ "*" ]
+}
